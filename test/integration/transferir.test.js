@@ -2,6 +2,13 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { handler } = require('../../src/handler');
 
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+
+// Base nueva por corrida: las pruebas parten siempre de los cinco usuarios semilla.
+process.env.DB_PATH = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'wallet-')), 'wallet.db');
+
 async function llamar(metodo, ruta, cuerpo) {
   const r = await handler({
     rawPath: ruta,
