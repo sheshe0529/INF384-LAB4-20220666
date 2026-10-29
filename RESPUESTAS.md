@@ -58,7 +58,7 @@ Con la corrección, tres corridas seguidas dan pass 12 fail 0.
 - Link al run fallido: https://github.com/sheshe0529/INF384-LAB4-20220666/actions/runs/40966483559
 
 ## Parte 3 · Decisión bajo restricción
-Link al run medido: 
+Link al run medido: https://github.com/sheshe0529/INF384-LAB4-20220666/actions/runs/40964837073
 
 | Job | Duración (min:seg) |
 |---|---|
